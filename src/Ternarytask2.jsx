@@ -12,8 +12,8 @@ function Ternarytask2() {
     <div>
         <button onClick={click}>buttonclick</button>
         <div style={{display:"flex"}}>
-            <showmark onClick={click}>{showmark ? <div><RxCross1/></div> :""}</showmark>
             {showimage ? <div><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.1XMLaDVNyfHhj4PYZIKK0gAAAA%26pid%3DApi&f=1&ipt=d54bfb7818dbfc24f85440619344de0596d22afce1a41a247a1e4aa9f786c146&ipo=images"/></div> :""}
+            <showmark onClick={click}>{showmark ? <div><RxCross1/></div> :""}</showmark>
         </div>
     </div>
   )
