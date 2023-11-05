@@ -1,0 +1,31 @@
+.topnav{
+    margin: 10px;
+    padding: 5px;
+}
+.sellitems{
+    border-top: .5px solid rgb(145, 133, 133);
+    height: 70px;
+    /* position: fixed; */
+}
+
+.innersell li{
+    display: none;
+}
+.innersell{
+    padding: 20px;
+}
+.sellogo{
+padding-top: 20px;
+margin-left: -70px;
+}
+.sellogin{
+    margin-left: 400px;
+}
+button{
+    background-color:orange;
+    border: none;
+    /* margin: 10px; */
+    padding: 10px;
+    height: 55px;
+    width: 150px;
+}

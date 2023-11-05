@@ -1,0 +1,17 @@
+.footer1{
+    margin-left: 50px;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.footer{
+    background-color: rgb(246, 246, 172);
+}
+.foothead{
+    background-color: rgb(246, 246, 172);
+    text-align: center;
+}

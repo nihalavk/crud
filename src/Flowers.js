@@ -1,0 +1,6 @@
+const flowers=[{id:1,name:"rose",color:"red",image:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.xvBNHAcGGr692pP1C-IthQAAAA%26pid%3DApi&f=1&ipt=a08e821a3bab8c9425c8cd9674706c20bb004aa9d1f6e9185fd9d86ff4b2a8df&ipo=images"},
+            {id:2, name:"lilly",color:"purple",image:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.Q6p7LooU7sIgAazsRZ5yCgHaFj%26pid%3DApi&f=1&ipt=fd7d5cb71c556440ee7c6c6893d6784acbfc2686e07cdd3e4fe41aadd6562d4f&ipo=images"},
+            {id:3, name:"lotus",color:"pink",image:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.OjCR6kNhy1LGfGz7ut9O5QAAAA%26pid%3DApi&f=1&ipt=544f625584494b170c3b72d280b0789537ec63509457a1a5080abfad82aeb950&ipo=images"},
+            {id:4, name:"jasmin",color:"wite",image:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.Gpvv_5EbOfkpeeZMiKGwVQHaHa%26pid%3DApi&f=1&ipt=8c53b2c5e46213d5a073dfab4bd119fda1f769c09b97d7b79eb23349e538f837&ipo=images"},]
+
+            export default flowers

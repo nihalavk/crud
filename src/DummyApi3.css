@@ -1,0 +1,14 @@
+.apistyle{
+    display: flex;
+    flex-wrap: wrap;
+}
+.apistyle1{
+    margin: 20px;
+    text-align: center;
+    
+}
+.apistyle2{
+    margin: 20px;
+    width:200px;
+    height: 400px;
+}

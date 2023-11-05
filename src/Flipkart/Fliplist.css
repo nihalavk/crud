@@ -1,0 +1,27 @@
+
+.innerflip{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+
+}
+.innerflip li{
+    list-style-type: none;
+    display: none;
+}
+
+.flipitem{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 650;   
+} 
+.flipitem :hover > .innerflip
+{
+    display: block;
+}
+
+.flip1{
+    margin:30px;
+    text-align: center;
+}
