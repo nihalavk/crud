@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { newcontextflower } from './App'
 import { Button, Card } from 'react-bootstrap'
+import './Detailpage.css'
 
 function Detailpage() {
     const [Flower,setFlower] = useContext(newcontextflower)
@@ -14,18 +15,15 @@ function Detailpage() {
 
   return (
     <div>
-{        
-        <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={data.image} />
-      <Card.Body>
-        <Card.Title>{data.name}</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">{data.color}</Button>
-      </Card.Body>
-    </Card> }
+      <div className='flowertag'>
+        <div className='flowertag1'>
+          <img src={data.image} style={{height:"150px",width:"150px",borderRadius:"150px"}} />
+        </div>
+        <div className='flowertag2'>
+           <h2>{data.name}</h2>
+           <p>{data.text}</p>
+        </div>
+      </div>
        
     </div>
   )

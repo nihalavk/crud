@@ -56,10 +56,11 @@ function App() {
        <Route path='/card' element={<Flowercard/>}/>
         <Route path='/table' element={<Flowertable/>}/>
         <Route path='/detailpage/:Userid' element={<Detailpage/>}/>
+        
 
       </Routes>
       </BrowserRouter>
-    </newcontextflower.Provider> */}
+    </newcontextflower.Provider>  */}
 
 
 
