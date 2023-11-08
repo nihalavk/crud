@@ -10,7 +10,7 @@ function Flowertable() {
     <div>
       <Table striped bordered hover style={{width:"600px",marginLeft:"350px"}}>
         <thead style={{border:"1px solid gray"}}>
-          <tr  style={{textAlign:"center"}}>          
+          <tr style={{textAlign:"center"}}>          
             <th>Name</th>
             <th>Color</th>
             <th>Image</th>
@@ -18,7 +18,7 @@ function Flowertable() {
         </thead>
         <tbody style={{border:"1px solid gray"}}>
           {Flower.map((table)=>
-            <tr  style={{textAlign:"center"}}>
+            <tr style={{textAlign:"center"}}>
               <td>{table.name}</td>
               <td>{table.color}</td>
               <td><img src={table.image} style={{height:"100px",width:"120px",borderRadius:"15px"}}/></td>         

@@ -31,6 +31,9 @@ import Flowerhome from './Flowerhome';
 import Detailpage from './Detailpage';
 import Ternarytask2 from './Ternarytask2';
 import Digitalclock from './Digitalclock/Digitalclock';
+import Events from './Events';
+import Events2 from './Events2';
+import Eventtask from './Eventtask';
 
 export const newcontextflower=createContext()
 function App() {
@@ -46,7 +49,7 @@ function App() {
       <Route path='/contact' element={<Contact/>}></Route> 
       <Route path='/profile' element={<Profile/>}></Route> 
     </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter> */} 
     {/* <newcontextflower.Provider value={[Flower,setFlower]}>
       <BrowserRouter>
       <NewFlower/>
@@ -64,9 +67,9 @@ function App() {
 
 
 
-    <Ternarytask2/>
+    {/* <Ternarytask2/> */}
     {/* <Digitalclock/> */}
-    
+    <Eventtask/>
     </div>
   );
 }
