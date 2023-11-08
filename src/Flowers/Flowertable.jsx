@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Table } from 'react-bootstrap'
-import { newcontextflower } from './App'
+import { newcontextflower } from '../App'
 
 function Flowertable() {
     const [Flower,setFlower] = useContext(newcontextflower)

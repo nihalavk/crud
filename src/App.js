@@ -19,15 +19,15 @@ import Location from './Components/Location';
 import Address from './Components/Address';
 import Contact from './Components/Contact';
 import Profile from './Components/Profile';
-import Flowers from './Flowers';
-import Flower from './NewFlower';
-import flowers from './Flowers';
+import Flowers from './Flowers/Flowers';
+import Flower from './Flowers/NewFlower';
+import flowers from './Flowers/Flowers';
 import { createContext, useState } from 'react';
-import Flowerlist from './Flowerlist';
-import Flowercard from './Flowercard';
-import Flowertable from './Flowertable';
-import NewFlower from './NewFlower';
-import Flowerhome from './Flowerhome';
+import Flowerlist from './Flowers/Flowerlist';
+import Flowercard from './Flowers/Flowercard';
+import Flowertable from './Flowers/Flowertable';
+import NewFlower from './Flowers/NewFlower';
+import Flowerhome from './Flowers/Flowerhome';
 import Detailpage from './Detailpage';
 import Ternarytask2 from './Ternarytask2';
 import Digitalclock from './Digitalclock/Digitalclock';
@@ -36,6 +36,7 @@ import Events2 from './Events2';
 import Eventtask from './Eventtask';
 
 export const newcontextflower=createContext()
+
 function App() {
   const [Flower, setFlower] = useState(flowers)
   return (

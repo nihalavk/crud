@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Button, Card } from 'react-bootstrap'
-import { newcontextflower } from './App'
+import { newcontextflower } from '../App'
 import { Link } from 'react-router-dom'
 
 function Flowercard() {

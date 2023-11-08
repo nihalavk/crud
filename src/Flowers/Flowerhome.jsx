@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { newcontextflower } from './App'
+import { newcontextflower } from '../App'
 import './Flowerhome.css'
 
 function Flowerhome() {
