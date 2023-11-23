@@ -8,6 +8,13 @@
     display: flex;
     ;
 }
+.flowerhometags li{
+    list-style-type: none;
+}
+.flowerhometags a{
+    text-decoration: none;
+    color: black;
+}
 .flowerhometags{
     font-family: cursive;
     margin-left: 100px;

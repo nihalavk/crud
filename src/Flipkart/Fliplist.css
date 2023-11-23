@@ -10,13 +10,13 @@
     display: none;
 }
 
-.flipitem{
+.flipitem a{
     text-decoration: none;
     color: black;
     font-size: 13px;
     font-weight: 650;   
 } 
-.flipitem :hover > .innerflip
+.flipitem a :hover > .innerflip
 {
     display: block;
 }

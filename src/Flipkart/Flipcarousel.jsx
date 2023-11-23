@@ -10,16 +10,15 @@ function Flipcarousel() {
 
   return (
     <div>
-        <div className='flipcaro'>
-              <Carousel>
-              {slide.map((view)=>
-              <Carousel.Item>
-                <img src={view.image} />
-              </Carousel.Item>
-                )}
-              </Carousel>
-          
-        </div>
+      <div className='flipcaro'>
+        <Carousel>
+          {slide.map((view)=>
+            <Carousel.Item>
+              <img src={view.image} />
+            </Carousel.Item>
+          )}
+        </Carousel>  
+      </div>
     </div>
   )
 }

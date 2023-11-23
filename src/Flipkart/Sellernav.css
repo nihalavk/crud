@@ -5,11 +5,15 @@
 .sellitems{
     border-top: .5px solid rgb(145, 133, 133);
     height: 70px;
-    /* position: fixed; */
 }
 
 .innersell li{
     display: none;
+    list-style-type: none;
+}
+.innersell a{
+    text-decoration: none;
+    color: black;
 }
 .innersell{
     padding: 20px;
@@ -21,7 +25,7 @@ margin-left: -70px;
 .sellogin{
     margin-left: 400px;
 }
-button{
+.sellbtn{
     background-color:orange;
     border: none;
     /* margin: 10px; */

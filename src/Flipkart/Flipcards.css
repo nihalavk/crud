@@ -11,6 +11,7 @@
     margin-left: 30px;
     font-size: 20px;
     font-weight: 560;
+    
 }
 .flipcardimg:hover{
     transform: scale(1.2,1.2);

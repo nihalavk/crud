@@ -1,57 +1,46 @@
 import logo from './logo.svg';
-import './App.css';
+
 import Useffect from './Useffect';
-import DummyApi from './DummyApi';
-import DummyApi2 from './DummyApi2';
-import DummyApi3 from './DummyApi3';
-import Dummy4 from './Dummy4';
-import Fliprouter from './Fliprouter';
-import Apibutton from './Apibutton';
-import ApiAsync from './ApiAsync';
-import ApiAsync2 from './ApiAsync2';
-import Carsd2 from './Mapwebsite.jsx/Carsd2';
-import Carousel2 from './Mapwebsite.jsx/Carousel2';
-import Nav2 from './Mapwebsite.jsx/Nav2';
-import Nav1 from './Website/Nav1';
+
+import Fliprouter from './Flipkart/Fliprouter';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
-import Home from './Components/Home';
-import Location from './Components/Location';
-import Address from './Components/Address';
-import Contact from './Components/Contact';
-import Profile from './Components/Profile';
-import Flowers from './Flowers/Flowers';
-import Flower from './Flowers/NewFlower';
 import flowers from './Flowers/Flowers';
 import { createContext, useState } from 'react';
-import Flowerlist from './Flowers/Flowerlist';
+import ListItems from './CRED/Formlist';
+import Newtable from './CRED/Newtable';
+import Create from './CRED/Create';
+import Edit from './CRED/Edit';
+import View from './CRED/View';
 import Flowercard from './Flowers/Flowercard';
-import Flowertable from './Flowers/Flowertable';
-import NewFlower from './Flowers/NewFlower';
-import Flowerhome from './Flowers/Flowerhome';
-import Detailpage from './Detailpage';
-import Ternarytask2 from './Ternarytask2';
-import Digitalclock from './Digitalclock/Digitalclock';
-import Events from './Events';
-import Events2 from './Events2';
-import Eventtask from './Eventtask';
-
+import Flowerlist from './Flowers/Flowerlist'
+import Flowertable from './Flowers/Flowertable'
+import Flowerhome from './Flowers/Flowerhome'
+import Detailpage from './Flowers/Detailpage'
+import NewFlower from './Flowers/NewFlower'
 export const newcontextflower=createContext()
+export const newlistcontext=createContext()
+export const newEditContext = createContext()
 
 function App() {
   const [Flower, setFlower] = useState(flowers)
+  const [List,setList] = useState(ListItems)
+  const [editIndex,setEditIndex] = useState(ListItems);
+  
   return (
     <div className="App">
-    {/* <BrowserRouter>
-    <Nav2/>
-    <Routes>
-      <Route path='/home' element={<Home/>}></Route> 
-      <Route path='/location' element={<Location/>}></Route> 
-      <Route path='/address' element={<Address/>}></Route> 
-      <Route path='/contact' element={<Contact/>}></Route> 
-      <Route path='/profile' element={<Profile/>}></Route> 
-    </Routes>
-    </BrowserRouter> */} 
-    {/* <newcontextflower.Provider value={[Flower,setFlower]}>
+      <newlistcontext.Provider value={[List,setList]}>
+      <newEditContext.Provider value={[editIndex,setEditIndex]}>
+     <BrowserRouter>
+     <Routes>
+      <Route path='/' element={<Newtable/>}/>
+      <Route path='/create' element={<Create/>}/>
+      <Route path='/view/:Userid' element={<View/>}/>
+      <Route path='/edit/:Userid' element={<Edit/>}/>
+     </Routes>
+     </BrowserRouter>
+     </newEditContext.Provider>
+      </newlistcontext.Provider> 
+       {/* <newcontextflower.Provider value={[Flower,setFlower]}>
       <BrowserRouter>
       <NewFlower/>
       <Routes>
@@ -60,17 +49,19 @@ function App() {
        <Route path='/card' element={<Flowercard/>}/>
         <Route path='/table' element={<Flowertable/>}/>
         <Route path='/detailpage/:Userid' element={<Detailpage/>}/>
-        
-
-      </Routes>
+        </Routes>
       </BrowserRouter>
-    </newcontextflower.Provider>  */}
-
-
-
-    {/* <Ternarytask2/> */}
-    {/* <Digitalclock/> */}
-    <Eventtask/>
+    </newcontextflower.Provider>   */}
+          {/* <BrowserRouter>
+    <Nav2/>
+    <Routes>
+      <Route path='/home' element={<Home/>}></Route> 
+      <Route path='/location' element={<Location/>}></Route> 
+      <Route path='/address' element={<Address/>}></Route> 
+      <Route path='/contact' element={<Contact/>}></Route> 
+      <Route path='/profile' element={<Profile/>}></Route> 
+    </Routes>
+    </BrowserRouter>  */}
     </div>
   );
 }

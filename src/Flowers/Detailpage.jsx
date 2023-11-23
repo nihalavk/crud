@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
-import { newcontextflower } from './App'
+import { newcontextflower } from '../App'
 import { Button, Card } from 'react-bootstrap'
 import './Detailpage.css'
 

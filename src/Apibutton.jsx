@@ -12,9 +12,9 @@ function Apibutton() {
   return (
     <>
   
-  <button onClick={click}>click</button>
+  <button onClick={click} style={{margin:"20px"}}>click</button>
     <div>
-        <table>
+        <table style={{margin:"30px"}}>
             <thead style={{border:"1px solid black"}}>
                 <tr>
                     <th  style={{border:"1px solid black"}}>title</th>

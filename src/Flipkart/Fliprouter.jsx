@@ -1,14 +1,14 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Flipnav from './Flipkart/Flipnav'
-import Flipcards from './Flipkart/Flipcards'
-import Sellernav from './Flipkart/Sellernav'
-import Sellerimage from './Flipkart/Sellerimage'
-import Sellerstory from './Flipkart/Sellerstory'
-import Fliplist from './Flipkart/Fliplist'
-import Flipcarousel from './Flipkart/Flipcarousel'
-import Flipfoot from './Flipkart/Flipfoot'
-import Sellerfoot from './Flipkart/Sellerfoot'
+import Flipnav from './Flipnav'
+import Flipcards from './Flipcards'
+import Sellernav from './Sellernav'
+import Sellerimage from './Sellerimage'
+import Sellerstory from './Sellerstory'
+import Fliplist from './Fliplist'
+import Flipcarousel from './Flipcarousel'
+import Flipfoot from './Flipfoot'
+import Sellerfoot from './Sellerfoot'
 
 function Fliprouter() {
   return (

@@ -44,84 +44,78 @@ function Flipcards() {
    
   return (
     <div>
-        {/* <div className='contents'> */}
-        <div className='container'>
-         <h3 className='text'>Best of electronics</h3>
-           <div className='items' style={{display:"flex"}}>
+      <div className='container'>
+        <h3 className='text'>Best of electronics</h3>
+          <div className='items' style={{display:"flex"}}>
             {item1.map((display)=>
-            <Card style={{ width: '28rem' }}>
+              <Card style={{ width: '28rem' }}>
                 <div className='flipcardimg'>
-            <Card.Img src={display.image1} style={{height:"90px", width:"120px", margin:"50px"}}/>
-            </div>
-            <Card.Body >
-          <Card.Title></Card.Title>
-          <Card.Text>
-           {display.discr1}
-          </Card.Text>
-          <Button variant="primary">{display.from}</Button>
-        </Card.Body>
-      </Card>
-        )}
+                  <Card.Img src={display.image1} style={{height:"90px", width:"120px", margin:"50px"}}/>
+                </div>
+                <Card.Body >
+                  <Card.Text style={{textAlign:"center"}}>
+                    {display.discr1}
+                  </Card.Text>
+                    <Button variant="primary" style={{marginLeft:"40px"}}>{display.from}</Button>
+                </Card.Body>
+              </Card>
+            )}
+          </div>
+     </div>
+     <div className='container'>
+      <h3 className='text'>Beauty,Food,Toys and more</h3>
+        <div className='items' style={{display:"flex"}}>
+          {item2.map((display)=>
+            <Card style={{ width: '28rem' }}>
+              <div className='flipcardimg'>
+                <Card.Img src={display.image2} style={{height:"90px", width:"120px", margin:"50px"}}/>
+              </div>
+              <Card.Body >
+                <Card.Text style={{textAlign:"center"}}>
+                  {display.discr2}
+                </Card.Text>
+                  <Button variant="primary" style={{marginLeft:"40px"}}>{display.shop}</Button>
+              </Card.Body>
+            </Card>
+          )}
+        </div>
+     </div>
+     <div className='container'>
+      <h3 className='text'>Sports,health care and more</h3>
+        <div className='items' style={{display:"flex"}}>
+          {item3.map((display)=>
+            <Card style={{ width: '28rem' }}>
+              <div className='flipcardimg'>
+                <Card.Img src={display.image3} style={{height:"90px", width:"120px", margin:"50px"}}/>
+              </div>
+                <Card.Body >
+                  <Card.Text style={{textAlign:"center"}}>
+                    {display.discr3}
+                  </Card.Text>
+                    <Button variant="primary" style={{marginLeft:"40px"}}>{display.shop2}</Button>
+                </Card.Body>
+            </Card>
+          )}
       </div>
      </div>
      <div className='container'>
-         <h3 className='text'>Beauty,Food,Toys and more</h3>
-           <div className='items' style={{display:"flex"}}>
-            {item2.map((display)=>
+      <h3 className='text'>Home & kitchen essentials</h3>
+        <div className='items' style={{display:"flex"}}>
+          {item4.map((display)=>
             <Card style={{ width: '28rem' }}>
-                <div className='flipcardimg'>
-            <Card.Img src={display.image2} style={{height:"90px", width:"120px", margin:"50px"}}/>
-            </div>
-            <Card.Body >
-          <Card.Title></Card.Title>
-          <Card.Text>
-           {display.discr2}
-          </Card.Text>
-          <Button variant="primary">{display.shop}</Button>
-        </Card.Body>
-      </Card>
+              <div className='flipcardimg'>
+                <Card.Img src={display.image4} style={{height:"90px", width:"120px", margin:"50px"}}/>
+              </div>
+                <Card.Body >
+                <Card.Text style={{textAlign:"center"}}>
+                  {display.discr4}
+                </Card.Text>
+                  <Button variant="primary" style={{marginLeft:"40px"}}>{display.shop3}</Button>
+                </Card.Body>
+            </Card>
         )}
       </div>
      </div>
-     <div className='container'>
-         <h3 className='text'>Sports,health care and more</h3>
-           <div className='items' style={{display:"flex"}}>
-            {item3.map((display)=>
-            <Card style={{ width: '28rem' }}>
-                <div className='flipcardimg'>
-            <Card.Img src={display.image3} style={{height:"90px", width:"120px", margin:"50px"}}/>
-            </div>
-            <Card.Body >
-          <Card.Title></Card.Title>
-          <Card.Text>
-           {display.discr3}
-          </Card.Text>
-          <Button variant="primary">{display.shop2}</Button>
-        </Card.Body>
-      </Card>
-        )}
-      </div>
-     </div>
-     <div className='container'>
-         <h3 className='text'>Home & kitchen essentials</h3>
-           <div className='items' style={{display:"flex"}}>
-            {item4.map((display)=>
-            <Card style={{ width: '28rem' }}>
-                <div className='flipcardimg'>
-            <Card.Img src={display.image4} style={{height:"90px", width:"120px", margin:"50px"}}/>
-            </div>
-            <Card.Body >
-          <Card.Title></Card.Title>
-          <Card.Text>
-           {display.discr4}
-          </Card.Text>
-          <Button variant="primary">{display.shop3}</Button>
-        </Card.Body>
-      </Card>
-        )}
-      </div>
-     </div>
-     {/* </div> */}
     </div>
   )
 }

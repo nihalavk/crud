@@ -48,7 +48,7 @@ function Sellernav() {
                     <div className='innersell'><a href="shop">Shopsy</a></div>
                 <div className='sellogin' style={{display:"flex"}}>
                     <div className='innersell'><a href="login">Login</a></div>
-                    <button>Start Selling</button>
+                    <button className='sellbtn'>Start Selling</button>
                 </div>
                 </div>
             

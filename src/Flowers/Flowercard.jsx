@@ -18,7 +18,7 @@ function Flowercard() {
               {card.short}
             </Card.Text>
             
-            <Button variant="primary" style={{textAlign:"center",marginLeft:"40px"}}><Link to={`/detailpage/${card.id}`}>{card.name}</Link></Button>
+            <Button variant="primary" style={{textAlign:"center",marginLeft:"90px"}}><Link to={`/detailpage/${card.id}`} style={{color:"black",textDecoration:"none"}}>{card.name}</Link></Button>
             
           </Card.Body>
         </Card>

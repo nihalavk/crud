@@ -5,26 +5,29 @@ function Events() {
     const [input, setinput] = useState("")
     const [email,setemail] = useState("")
     const [age,setage] = useState("")
-    
+
     const changefunc=((e)=>{
         setinput(e.target.value)
-      console.log(e);
-
+        console.log(e);
     })
+
     const changemail=((e)=>{
-        setemail(e.target.value)
-      console.log(e);
-
+          setemail(e.target.value)
+          console.log(e);
     })
+
     const changeage=((e)=>{
-        setage(e.target.value)
-      console.log(e);
+          setage(e.target.value)
+          console.log(e);
+    })
 
-    })
     const submitfunc=(()=>{
-        document.getElementById("display").innerHTML=`Name:${input} email:${email} age:${age}`
+          document.getElementById("display").innerHTML=`Name:${input} email:${email} age:${age}`
     })
+
+
   return (
+    
     <div id='display'>
         <label>Name:</label>
         <input type="text" value={input} onChange={changefunc} />
