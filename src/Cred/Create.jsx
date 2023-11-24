@@ -10,32 +10,29 @@ function Create() {
   const handleClose = () => setShow(saveData);
   const handleShow = () => setShow(true);
 
-    const newd=useNavigate()
-    const [List,setList] = useContext(newlistcontext)
-    const [add,setAdd] = useState({
-        id:"",
-        name:"",
-        age:"",
-        place:"",
-        email:""     
+  const newd=useNavigate()
+  const [List,setList] = useContext(newlistcontext)
+  const [add,setAdd] = useState({
+      id:"",
+      name:"",
+      age:"",
+      place:"",
+      email:""     
     })
 
-      const changedetls=(e)=>{
-        console.log(e.target.value);
-        const name = e.target.name;
-        const value = e.target.value;
-        setAdd({...add,[name]:value})
-    }
+  const changedetls=(e)=>{
+    console.log(e.target.value);
+    const name = e.target.name;
+    const value = e.target.value;
+    setAdd({...add,[name]:value})}
 
-    const saveData=()=>{
-      // console.log(add)
-      if(add.name,add.age,add.id,add.place,add.email== ''){
-        alert("Please enter valid details");
-      } 
-      else {
-        setList([...List,add]);
-        newd('/')
-      }
+  const saveData=()=>{  
+    if
+      (add.name,add.age,add.id,add.place,add.email== ''){
+      alert("Please enter valid details")}
+    else
+        {setList([...List,add]);
+        newd('/')}
     }
 
   return (

@@ -7,7 +7,6 @@ import { Button } from 'react-bootstrap';
 function Edit() {
   
     const [List,setList] = useContext(newlistcontext);
-    // const [editIndex,setEditIndex] = useContext(newEditContext);
     const newd = useNavigate();
     const {Userid} = useParams();
     const data = List.find((item) => item.id === Userid);  

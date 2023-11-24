@@ -9,12 +9,11 @@ function Newtable() {
     const [List,setList] = useContext(newlistcontext)
     const newd = useNavigate()
     const newdata = () => {
-     newd('/create')
-    }
+    newd('/create')}
+
     const deleteRow = (e) => {
       const delId = e.target.value;
       let delIndex = null;
-
       // To loop through our list to find the index of the object with the id we clicked.
       List.forEach((row,index) => {
         if(row['id'] == delId){
