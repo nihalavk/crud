@@ -4,12 +4,13 @@ import { newEditContext, newlistcontext } from '../App'
 import './Create.css'
 import { Button } from 'react-bootstrap';
 import { CiEdit } from 'react-icons/ci';
+import { LiaHomeSolid } from 'react-icons/lia'
 
 
 function View() {
 
     const [List,setList] = useContext(newlistcontext);
-    const [editIndex,setEditIndex] = useContext(newEditContext);
+    // const [editIndex,setEditIndex] = useContext(newEditContext);
     const {Userid}=useParams();
     // const Userid1=parseInt(Userid);
     const data=List.find((item)=>item.id===Userid);
@@ -17,11 +18,16 @@ function View() {
     const edit=(e)=>{
       List.forEach((row,index) => {
        if(row['id'] == e.target.value){
-        setEditIndex(index);
+        // setEditIndex(index);
+        setList(index);
        }
       });
       newd('/edit');
     }
+    const home = () => {
+      newd('/')
+
+  }
   return (
     <div>
       <div className='formitems'>
@@ -46,7 +52,8 @@ function View() {
           </ul>
         </div>
         </div>
-        <div><Link to={`/edit/${data.id}`}><Button variant="primary" style={{marginLeft:"350px",marginTop:"30px"}}><CiEdit/></Button></Link></div>
+        <div style={{display:"flex"}}><Link to={`/edit/${data.id}`}><Button variant="primary" style={{marginLeft:"250px",marginTop:"30px"}}><CiEdit/></Button></Link>
+        <Button variant="primary" style={{marginLeft:"50px",marginTop:"30px"}}  onClick={home}><LiaHomeSolid/></Button></div>
       </div>
     </div>
   );

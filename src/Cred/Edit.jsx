@@ -5,12 +5,12 @@ import './Create.css'
 import { Button } from 'react-bootstrap';
 
 function Edit() {
-    const newd = useNavigate();
+  
     const [List,setList] = useContext(newlistcontext);
+    // const [editIndex,setEditIndex] = useContext(newEditContext);
+    const newd = useNavigate();
     const {Userid} = useParams();
-    // const Userid1 = parseInt(Userid);
-    const data = List.find((item) => item.id === Userid);
-    const [editIndex,setEditIndex] = useContext(newEditContext);
+    const data = List.find((item) => item.id === Userid);  
     const [add,setAdd] = useState({
         id:data.id,
         name:data.name,
@@ -26,18 +26,10 @@ function Edit() {
     };
       
     const saveData = () => {
-
       const update=List.map((edit)=>
-        edit.id==Userid?{...edit,...add}:edit
-      )
+      edit.id==Userid?{...edit,...add}:edit)
       setList(update)
       newd(`/view/${Userid}`)
-      // console.log(add)
-      // const updatedList = [...List];
-      // updatedList[editIndex] = add;
-      // setList(updatedList);
-      // alert('Are you sure?');
-      // newd(`/view/${Userid}`);
     };
 
   return (

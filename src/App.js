@@ -19,17 +19,17 @@ import Detailpage from './Flowers/Detailpage'
 import NewFlower from './Flowers/NewFlower'
 export const newcontextflower=createContext()
 export const newlistcontext=createContext()
-export const newEditContext = createContext()
+// export const newEditContext = createContext()
 
 function App() {
   const [Flower, setFlower] = useState(flowers)
   const [List,setList] = useState(ListItems)
-  const [editIndex,setEditIndex] = useState(ListItems);
+  // const [editIndex,setEditIndex] = useState(ListItems);
   
   return (
     <div className="App">
       <newlistcontext.Provider value={[List,setList]}>
-      <newEditContext.Provider value={[editIndex,setEditIndex]}>
+      {/* <newEditContext.Provider value={[editIndex,setEditIndex]}> */}
      <BrowserRouter>
      <Routes>
       <Route path='/' element={<Newtable/>}/>
@@ -38,7 +38,7 @@ function App() {
       <Route path='/edit/:Userid' element={<Edit/>}/>
      </Routes>
      </BrowserRouter>
-     </newEditContext.Provider>
+     {/* </newEditContext.Provider> */}
       </newlistcontext.Provider> 
        {/* <newcontextflower.Provider value={[Flower,setFlower]}>
       <BrowserRouter>
