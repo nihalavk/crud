@@ -4,8 +4,8 @@ import { Button, Modal, Table } from 'react-bootstrap'
 import { Link, useNavigate } from 'react-router-dom'
 import { LuView } from 'react-icons/lu'
 import { RiDeleteBin6Line } from 'react-icons/ri'
-
 function Newtable() {
+
     const [List,setList] = useContext(newlistcontext)
     const newd = useNavigate()
     const newdata = () => {
@@ -14,18 +14,14 @@ function Newtable() {
     const deleteRow = (e) => {
       const delId = e.target.value;
       let delIndex = null;
-      // To loop through our list to find the index of the object with the id we clicked.
       List.forEach((row,index) => {
         if(row['id'] == delId){
         delIndex = index;
-        }
-      });
-      // We remove the object from the ItemList
-        List.splice(delIndex,1);
-        alert("This will remove your data permenantly!");
-        // We re-render table with the new list
-        newd('/');
-        }
+        }});
+      List.splice(delIndex,1);
+      alert("This will remove your data permenantly!");
+      newd('/');
+      }
   return (
     <div>
       <Table striped bordered hover style={{width:"1000px",margin:"60px",marginLeft:"100px"}}>

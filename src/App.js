@@ -16,6 +16,7 @@ import Flowerlist from './Flowers/Flowerlist'
 import Flowertable from './Flowers/Flowertable'
 import Flowerhome from './Flowers/Flowerhome'
 import Detailpage from './Flowers/Detailpage'
+import Bootstraptask from './Bootstraptask';
 import NewFlower from './Flowers/NewFlower'
 export const newcontextflower=createContext()
 export const newlistcontext=createContext()
@@ -58,6 +59,7 @@ function App() {
       <Route path='/profile' element={<Profile/>}></Route> 
     </Routes>
     </BrowserRouter>  */}
+    {/* <Bootstraptask/> */}
     </div>
   );
 }

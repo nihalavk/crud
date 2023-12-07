@@ -22,8 +22,6 @@ function View() {
    
   const home = () => {
     newd('/')}
-
- 
   return (
     <div>
       <div className='formitems'>
